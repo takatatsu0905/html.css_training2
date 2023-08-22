@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+html {
+    font-size: 100%;
+}
+
+body {
+    background-color: #f4f9ff;
+    color: #333;
+    font-size: 0.875rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* サイト全体のコンテンツ幅を設定 */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* 中のコンテンツ部分の最大幅を設定 */
+
+/* 
+ヘッダー
+*/
+
+#header {
+    margin-top: 60px;
+}
+
+/* 
+h1タグ
+line-heightにh1タグの高さよりも小さい値「1px」を指定することで、
+h1タグの上下の余白が消えるため、ロゴ画像の高さと揃う
+「line-height: 0;」を設定してもOK!
+*/
+
+#header .site-title {
+    width :160px;
+    line-height: 1px;
+    margin-bottom: 15px;
+}
+
+#header .site-title a {
+    display: block;
+}
