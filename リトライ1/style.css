@@ -14,14 +14,13 @@ img {
     max-width: 100%;
 }
 
-/* サイト全体のコンテンツ幅を設定 */
+/* 全体のコンテンツ幅調整 */
 .container {
     max-width: 1000px;
     margin: 0 auto;
 }
 
-/* 中のコンテンツ部分の最大幅を設定 */
-
+/* 各コンテンツの幅調整 */
 .inner {
     max-width: 600px;
     margin: 0 auto;
@@ -33,42 +32,26 @@ img {
     margin-bottom: 10px;
 }
 
-/* 
-ヘッダー
-*/
+/* header */
 
 #header {
-    margin-top: 60px;
-}
-
-/* 
-h1タグ
-line-heightにh1タグの高さよりも小さい値「1px」を指定することで、
-h1タグの上下の余白が消えるため、ロゴ画像の高さと揃う
-「line-height: 0;」を設定してもOK!
-*/
-
-#header .site-title {
-    width :160px;
+    margin-top:  60px;
+    width: 160px;
     line-height: 1px;
     margin-bottom: 15px;
 }
 
-/* aタグのリンク範囲を親要素のサイズに広げる */
-#header .site-title a {
+#header a {
     display: block;
 }
 
-/* 
-maincisual
-*/
+/* mainvisual */
+
 #mainvisual {
     margin-bottom: 60px;
 }
 
-/* 
-index
-*/
+/* index */
 
 #index {
     background-color: #fff;
@@ -76,27 +59,15 @@ index
     margin-bottom: 60px;
 }
 
-/* 
-olタグはリストの戦闘に番号がつく、その分だけ左に移動
-＊番号を消したい場合は「list-style: none;」を指定
-*/
-
-#index .index-list {
+#index ol {
     margin-left: 20px;
 }
 
-#index .index-list li {
+#index li {
     margin-bottom: 20px;
 }
 
-/* リストの最後は下にマージンをつけない */
-#index .index-list li:last-child {
-    margin-bottom: 0;
-}
-
-/* 
-detail
-*/
+/* detail */
 
 #detail {
     margin-bottom: 100px;
@@ -112,7 +83,7 @@ detail
     font-weight: bold;
 }
 
-#detail .content .img {
+#detail .content img {
     width: 270px;
     margin-right: 60px;
 }
@@ -122,8 +93,8 @@ detail
 }
 
 #detail .content dl {
-    display: flex;  /* dt、ddを横並びにする */
-    flex-wrap: wrap; /* dtとddが100%になったら、横並びを折り返す */
+    display: flex;
+    flex-wrap: wrap;
     padding: 16px 0;
     margin-bottom: 25px;
     border-top: solid 1px #dedede;
@@ -138,54 +109,42 @@ detail
     width: 75%;
 }
 
-#detail .content .link {
+#detail .content a {
     color: #333;
 }
 
-#detail .content .link:hover {
+#detail .content a:hover {
     opacity: 0.8;
 }
 
-/* 
-footer
-*/
-
+/* footer */
 #footer {
     font-size: 0.625rem;
     padding: 15px 0;
 }
 
-/* 
-SP
-*/
-
+/* SP */
 @media screen and (max-width: 1024px) {
     .inner {
         padding: 0 40px;
     }
 
-    /* 
-    header
-    */
+    /* header */
     #header {
         padding: 0 10px;
     }
 
-    /* 
-    Mainvisual
-    */
+    /* mainvisual */
     #mainvisual {
         padding: 0 10px;
     }
 
-    /* 
-    detail
-    */
-    #detail .content {
+    /* detail */
+    #detail .content{
         flex-direction: column;
     }
 
-    #detail .content .img {
+    #detail .content img {
         width: 100%;
         margin: 0 0 25px 0;
     }
